@@ -18,7 +18,7 @@ df2.describe()
 
 # In[2]:
 
-
+# Remove rows with missing values in df1 and df2
 df1 = df1.dropna()
 df2 = df2.dropna()
 
@@ -41,25 +41,25 @@ df1.head()
 
 # In[5]:
 
-
+#displaying the data
 df2.head()
 
 
 # In[20]:
 
-
+#merging the data
 new_data = pd.merge(df1, df2, on='Returns')
 print("New Merged Dataset:\n", new_data)
 
 
 # In[22]:
 
-
+#merge data display
 new_data.head()
 
 
 
-# In[ ]:
+
 
 
 
